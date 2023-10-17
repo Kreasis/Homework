@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 class="titulo">SISTEMAS DE INFORMACIÓN</h1>
+
+    <div class="botones_inicial">
+        <select class="dropd" id="systemDropdown">
+            <option value="Sistema1">Sistema1</option>
+            <option value="Sistema2">Sistema2</option>
+            <option value="Sistema3">Sistema3</option>
+            <!-- Opciones de Sistema4 a Sistema10 -->
+        </select>
+        <input class="FECHA" type="text" id="dateInput" placeholder="Seleccione la fecha" oninput="formatDate(this)">
+        <button class="EVALU" type="button" onclick="evaluateDate()">Evaluar</button>
+    </div>
+
+    <div id="table-container" class="chart-container">
+        <canvas id="chart" class="chart-container"></canvas>
+    </div>
+
+    <div id="info-container" class="general">
+        <input type="text" value="GRUPO HORACIO" readonly class="grupohoracio">
+        <button class="linkATT" type="button" onclick="openLink('https://www.att.gob.bo')">Link a ATT</button>
+        <button class="linkMATERIA" type="button" onclick="openLink('https://neo.ucb.edu.bo/student_lessons/list/4174641')">Link a la Materia</button>
+        <button class="linkFACE" type="button" onclick="openLink('https://www.facebook.com/?locale=es_LA')">Link a Facebook</button>
+        <button class="linkINFO" type="button" onclick="openNewPage()">Información</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
